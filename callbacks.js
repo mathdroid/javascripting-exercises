@@ -29,3 +29,19 @@ ngobrol(
   [53, 17],
   "Tidak, saya tidak tinggal di Bandung"
 );
+
+function doSomethingWithUrl(url) {
+  // wait a long time
+  return {
+    confirmed: 14000,
+    death: 1400,
+    url: url,
+  };
+}
+
+function readFile(url, callback) {
+  const result = doSomethingWithUrl(url);
+  callback(result);
+}
+
+readFile("google.com", console.log);
