@@ -15,17 +15,17 @@
 // }
 
 const arrayA = [1, 2, 3];
+let arrayB = [4, 5, 6];
 
-const arrayB = [4, 5, 6];
-
-function kaliSembilan(arrayInput) {
-  let newArray = [];
-  for (let i = 0; i < arrayInput.length; i++) {
-    newArray.push(arrayInput[i] * 9);
-  }
-
-  return newArray;
+function printArray(arrayInput) {
+  console.log(arrayInput);
+  arrayB = arrayInput;
 }
 
-console.log(kaliSembilan(arrayA));
-console.log(kaliSembilan(arrayB));
+console.log(arrayA);
+console.log(arrayB);
+
+printArray(["hello", "world"]);
+
+console.log(arrayA);
+console.log(arrayB);
