@@ -5,3 +5,7 @@ const filtered = numbers.filter(function (number) {
 });
 
 console.log(filtered);
+
+// .map
+// .reduce
+// .filter
